@@ -274,3 +274,46 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
+
+/*
+*	Responsive styles
+*/
+
+
+
+/*
+*	Mobile
+*/
+@media only screen and (max-width: 600px) {
+	#restaurants-list li {
+	  background-color: #fff;
+	  border: 2px solid #ccc;
+	  font-family: Arial,sans-serif;
+	  margin: 15px;
+	  min-height: 380px;
+	  padding: 0 30px 25px;
+	  text-align: center;
+	}
+
+	#restaurants-list li a {
+	  background-color: orange;
+	  border-bottom: 3px solid #eee;
+	  color: #fff;
+	  display: inline-block;
+	  font-size: 20pt;
+	  margin: 15px 0 0;
+	  padding: 8px 30px 10px;
+	  text-align: center;
+	  text-decoration: none;
+	  text-transform: uppercase;
+	}
+}
+
+/*
+*	Tablet
+*/
+
+
+/*
+*	Laptop/desktop
+*/
