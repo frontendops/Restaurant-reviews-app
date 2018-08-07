@@ -78,7 +78,7 @@ initMap = () => {
         scrollWheelZoom: true
       });
       //tileLayer changed to different styles
-  L.tileLayer('https://api.mapbox.com/styles/v1/minimalmvnt/cjkik1x8x3odh2smov3ijjx0j/tiles/256/{z}/{x}/{y}?access_token={mapboxToken}', {
+  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.jpg70?access_token={mapboxToken}', {
     mapboxToken: 'pk.eyJ1IjoibWluaW1hbG12bnQiLCJhIjoiY2praWp0NDdqMTVrZTNrb2F6amZoczR4YyJ9.1l6BrLNEGM_YcohFlgIrqg',
     maxZoom: 18,
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
