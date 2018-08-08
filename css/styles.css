@@ -198,7 +198,7 @@ nav h1 a {
   position: fixed;
   right: 0;
   top: 80px;
-  width: 50%;
+  width: 45%;
 }
 .inside #map {
   background-color: #ccc;
@@ -343,10 +343,44 @@ nav h1 a {
 	  padding: 8px 30px 10px;
 	  text-align: center;
 	}
+
 }
 /*
-*	Tablet
+*	styles for the review on a phone
 */
+@media screen and (max-width: 679px) {
+	#breadcrumb {
+	    width: 100%;
+	    padding: 10px 5px 16px;
+	  }
+
+	  .inside #map-container {
+	    height: 400px;
+	    position: relative;
+	    top: 121px;
+	    width: 100%;
+	  }
+
+	  #restaurant-container, #reviews-container {
+		width: 90%;
+	    padding: 0;
+	    position: relative;
+	    top: 121px;
+	    margin: 0 auto;
+	  }
+
+	  #reviews-container h2 {
+		  text-align: center;
+	  }
+
+	  .inside #footer {
+	    position: relative;
+	    width: 100%;
+	    top: 121px;
+	    padding: 25px 0 25px;
+	  }
+
+}
 
 /*
 *	Laptop/desktop
@@ -381,4 +415,7 @@ nav h1 a {
 	  padding: 8px 30px 10px;
 	  text-align: center;
 	}
+
+
+
 }
