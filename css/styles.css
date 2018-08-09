@@ -1,4 +1,6 @@
 @charset "utf-8";
+
+
 /* CSS Document */
 
 body,td,th,p{
@@ -416,6 +418,49 @@ nav h1 a {
 	  text-align: center;
 	}
 
+	#restaurant-hours {
+		margin: 0 auto;
+	}
+
+	#restaurant-hours td {
+		font-size: 1.4em;
+	}
+
+	#reviews-list li p {
+    	font-size: 1.1em;
+	}
+
+	#restaurant-address {
+    	font-size: 1.4em;
+    	text-align: center;
+	}
+
+	#reviews-container h2 {
+		text-align: center;
+	}
+
+	.inside #footer {
+	  position: relative;
+	  width: 100%;
+	  top: 121px;
+	  padding: 25px 0 25px;
+	}
+}
 
 
+@media screen and (min-width: 1200px) {
+	.inside #map-container {
+		width: 55%
+	}
+
+	#restaurant-address {
+    	font-size: 1.6em;
+	}
+
+	 #restaurant-container, #reviews-container {
+		 width: 40%;
+	 }
+	 #breadcrumb {
+		 width: 38%;
+	 }
 }
