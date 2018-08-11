@@ -279,11 +279,26 @@ nav h1 a {
   color: #666;
 }
 
+
+/*
+*	Skip link style
+*/
+.skip-link {
+	position: absolute;
+	top: -40px;
+	left: 0;
+	background: red;
+	color: white;
+	padding: 8px;
+	z-index: 100;
+}
+
+.skip-link:focus {
+	top: 0;
+}
 /*
 *	Responsive styles
 */
-
-
 
 /*
 *	Mobile
