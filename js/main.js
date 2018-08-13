@@ -4,6 +4,16 @@ let restaurants,
 var newMap
 var markers = []
 
+
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js', {scope: './'})
+    .then(function() {
+        console.log("service worker registered ");
+    }).catch(function() {
+        console.log("failed to register");
+    })
+};
+
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
  */
@@ -200,13 +210,3 @@ addMarkersToMap = (restaurants = self.restaurants) => {
   });
 
 }
-/* addMarkersToMap = (restaurants = self.restaurants) => {
-  restaurants.forEach(restaurant => {
-    // Add marker to the map
-    const marker = DBHelper.mapMarkerForRestaurant(restaurant, self.map);
-    google.maps.event.addListener(marker, 'click', () => {
-      window.location.href = marker.url
-    });
-    self.markers.push(marker);
-  });
-} */
